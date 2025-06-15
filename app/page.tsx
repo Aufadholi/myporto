@@ -13,6 +13,9 @@ export default function Home() {
       <section id="hero" className="snap-center">
         <Hero />
       </section>
+
+      { /* Add other sections here, e.g., About, Experience, Skills, Projects */ }
+      
     </div>
   );
 }
