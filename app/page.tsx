@@ -7,10 +7,10 @@ import { FaInstagram, FaTiktok, FaYoutube, FaEnvelope } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen bg-black flex-col">
+    <div className="flex min-h-screen bg-[#1b1b1b] flex-col snap-y snap-mandatory ">
       <Header />
 
-      <section>
+      <section id="hero" className="snap-center">
         <Hero />
       </section>
     </div>
