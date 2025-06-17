@@ -1,4 +1,4 @@
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import React from 'react';
 
 function BackgroundCircles() {
@@ -6,39 +6,55 @@ function BackgroundCircles() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1.2 }}
+      transition={{ duration: 1.5, ease: 'easeOut' }}
       className="absolute inset-0 flex items-center justify-center pointer-events-none"
     >
-      {/* Ping effect */}
+      {/* Inner Pulse Circle */}
       <motion.div
-        className="absolute border border-[#333333] rounded-full h-[200px] w-[200px]"
+        className="absolute border-1 border-yellow-100 rounded-full h-[150px] w-[150px] sm:h-[200px] sm:w-[200px]"
         animate={{
-          scale: [1, 2, 1],
-          opacity: [0.6, 0, 0.6],
+          scale: [1, 1.8, 1],
+          opacity: [0.5, 0.1, 0.5],
         }}
         transition={{
-          duration: 2,
+          duration: 2.2,
           repeat: Infinity,
-          repeatType: "loop",
-          ease: "easeInOut"
+          repeatType: 'loop',
+          ease: 'easeInOut',
         }}
       />
-      {/* Pulse effect */}
+      {/* Middle Ripple Circle */}
       <motion.div
-        className="absolute border border-[#807058] rounded-full opacity-20 h-[500px] w-[500px]"
+        className="absolute border border-white rounded-full h-[100px] w-[100px] sm:h-[400px] sm:w-[400px]"
         animate={{
-          scale: [1, 1.1, 1],
+          scale: [1, 1.5, 1],
+          opacity: [0.3, 0.1, 0.3],
+        }}
+        transition={{
+          duration: 3,
+          repeat: Infinity,
+          repeatType: 'loop',
+          ease: 'easeInOut',
+          delay: 0.5,
+        }}
+      />
+      {/* Outer Glow Circle */}
+      <motion.div
+        className="absolute border-2 border-yellow-600/25 rounded-full h-[150px] w-[150px] sm:h-[600px] sm:w-[600px]"
+        animate={{
+          scale: [1, 1.2, 1],
           opacity: [0.2, 0.4, 0.2],
         }}
         transition={{
-          duration: 2.5,
+          duration: 3.5,
           repeat: Infinity,
-          repeatType: "loop",
-          ease: "easeInOut"
+          repeatType: 'loop',
+          ease: 'easeInOut',
+          delay: 1,
         }}
       />
-      {/* Static circle */}
-      <div className="absolute border-2 border-[#4a3e3e] rounded-full h-[300px] w-[300px] animate-pulse" />
+      {/* Static Glow Circle */}
+      <div className="absolute rounded-full h-[250px] w-[250px] sm:h-[350px] sm:w-[350px] bg-gradient-to-r from-yellow-500/10 to-white-400/10 shadow-[0_0_40px_rgba(59,130,246,0.2)]" />
     </motion.div>
   );
 }
