@@ -1,4 +1,6 @@
 import React from 'react';
+import { SiLaravel, SiReact, SiNextdotjs, SiPython, SiBlender } from 'react-icons/si';
+
 
 function Skill() {
   const programmingSkills = [
