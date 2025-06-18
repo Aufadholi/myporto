@@ -1,53 +1,96 @@
-import React from 'react';
+"use client";
+import { FaCode, FaPaintBrush, FaCubes, FaGithub, FaLinkedin } from "react-icons/fa";
+import { motion } from "framer-motion";
 
-function About() {
+const skills = [
+  {
+    title: "Frontend Developer",
+    description:
+      "Crafting responsive, accessible, and modern web interfaces using React, Next.js, TailwindCSS, and more.",
+    icon: <FaCode className="text-cyan-400" size={28} />,
+  },
+  {
+    title: "UI/UX Designer",
+    description:
+      "Designing seamless and intuitive user experiences with attention to aesthetics and usability.",
+    icon: <FaPaintBrush className="text-pink-400" size={28} />,
+  },
+  {
+    title: "3D Modelling",
+    description:
+      "Creating low-poly to high-detail 3D assets for web or product showcases using Blender & WebGL.",
+    icon: <FaCubes className="text-purple-400" size={28} />,
+  },
+];
+
+export default function About() {
   return (
-    <section className="relative min-h-screen bg-gray-900 flex items-center justify-center px-4 sm:px-6 lg:px-8">
-      {/* Background Decorative Element */}
-      
+    <section className="min-h-screen py-20 px-4 bg-gradient-to-br from-gray-900 via-gray-950 to-black text-white">
+      <div className="max-w-5xl mx-auto text-center mb-16">
+        <motion.h2
+          className="text-4xl font-bold mb-2"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          About Me
+        </motion.h2>
+        <p className="text-gray-400 text-lg">
+          A creative developer blending design, code, and 3D model imagination.
+        </p>
+      </div>
 
-      {/* Main Content */}
-      <div className="relative z-10 max-w-5xl mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-12 py-16">
-        {/* Image Section */}
-        <div className="relative flex-shrink-0">
-          <div className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 group">
-            <div className="absolute inset-0 bg-gradient-to-r from-amber-100 to-blue-500 rounded-2xl transform group-hover:scale-105 transition-transform duration-500"></div>
-            <img
-              src="https://via.placeholder.com/300"
-              alt="Profile"
-              className="relative w-full h-full object-cover rounded-2xl shadow-2xl transform translate-x-2 translate-y-2 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-500"
-            />
-          </div>
-        </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto px-1">
+        {skills.map((skill, idx) => (
+          <motion.div
+            key={idx}
+            className="rounded-xl p-6 border border-white/10 bg-white/5 backdrop-blur-md shadow-xl hover:-translate-y-1 transition transform"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: idx * 0.1 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center gap-3 mb-4">
+              {skill.icon}
+              <h3 className="text-xl font-semibold">{skill.title}</h3>
+            </div>
+            <p className="text-gray-300 text-sm leading-relaxed">{skill.description}</p>
+          </motion.div>
+        ))}
+      </div>
 
-        {/* Text Section */}
-        <div className="flex-1 text-center lg:text-left space-y-6">
-          <h3 className="text-4xl text-white sm:text-5xl font-bold tracking-tight">
-            About <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-100 to-amber-200">Me</span>
-          </h3>
-          <p className="text-lg sm:text-xl text-gray-300 leading-relaxed max-w-lg mx-auto lg:mx-0">
-            I'm a dedicated developer with a passion for crafting sleek, efficient, and user-focused web applications. 
-            My expertise lies in modern frontend technologies, and I thrive on transforming creative ideas into seamless digital experiences. 
-            Always curious, always evolving.
-          </p>
-          <div className="flex justify-center lg:justify-start gap-4">
-            <a
-              href="#contact"
-              className="inline-block px-6 py-3 bg-gradient-to-r from-amber-100 to-amber-200 text-black font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
-            >
-              Get in Touch
-            </a>
-            <a
-              href="#portfolio"
-              className="inline-block px-6 py-3 border border-gray-500 text-gray-300 font-semibold rounded-lg hover:bg-gray-700/50 transition-colors duration-300"
-            >
-              View Portfolio
-            </a>
-          </div>
+      <div className="text-white max-w-6xl text-center md:text-left space-y-4 mt-10 mx-auto rounded-xl p-6 border border-white/10 bg-white/5 backdrop-blur-md shadow-xl hover:-translate-y-1 transition transform">
+        <h3 className="text-2xl font-semibold">Let’s Build Something Great</h3>
+        <p className="text-gray-300">
+          With a passion for clean code and engaging UX, I focus on delivering web solutions that not only function but inspire.
+        </p>
+        <div className="flex justify-center md:justify-start gap-4 pt-2">
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 border border-white/30 text-white font-medium rounded-md hover:bg-white/10 transition"
+          >
+            <FaGithub className="w-4 h-4" />
+            GitHub
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 border border-white/30 text-white font-medium rounded-md hover:bg-white/10 transition"
+          >
+            <FaLinkedin className="w-4 h-4" />
+            LinkedIn
+          </a>
         </div>
+      </div>
+
+      <div className="mt-20 max-w-4xl mx-auto text-center text-gray-400 text-md px-4">
+        <p>
+          With a strong eye for design, a deep understanding of frontend development, and 3D artistry, I help bring ideas to life on screen. Whether it's building sleek UIs, designing user flows, or modeling 3D environments, I bridge the gap between imagination and implementation.
+        </p>
       </div>
     </section>
   );
 }
-
-export default About;

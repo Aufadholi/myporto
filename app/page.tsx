@@ -9,8 +9,10 @@ import Skill from "./components/Skill";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen bg-[#1b1b1b] flex-col snap-y snap-mandatory ">
-      <Header />
+    <div className="flex min-h-screen bg-gray-950 flex-col snap-y snap-mandatory ">
+      <Header handleLinkClick={function (e: React.MouseEvent<HTMLAnchorElement>, href: string): void {
+        throw new Error("Function not implemented.");
+      } } />
 
       <section id="hero" className="snap-start">
         <Hero />

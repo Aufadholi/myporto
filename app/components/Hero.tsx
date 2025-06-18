@@ -40,7 +40,7 @@ export default function Hero() {
       <Header handleLinkClick={handleLinkClick} />
       <div
         ref={pageRef}
-        className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-black to-gray-900 transition-opacity duration-300 ease-in-out"
+        className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-bl from-black via-gray-950 to-gray-900 transition-opacity duration-300 ease-in-out"
       >
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
           <BackgroundCircles />
