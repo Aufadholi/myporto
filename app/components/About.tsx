@@ -66,7 +66,7 @@ export default function About() {
         </p>
         <div className="flex justify-center md:justify-start gap-4 pt-2">
           <a
-            href="https://github.com"
+            href="https://github.com/Aufadholi"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 border border-white/30 text-white font-medium rounded-md hover:bg-white/10 transition"
@@ -75,7 +75,7 @@ export default function About() {
             GitHub
           </a>
           <a
-            href="https://linkedin.com"
+            href="www.linkedin.com/in/aufa-fadholi-90638a29a"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 border border-white/30 text-white font-medium rounded-md hover:bg-white/10 transition"
