@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skill from "./components/Skill";
 import Projects from "./components/Project";
+import Footer from "./components/Footer";
 
 
 export default function Home() {
@@ -35,6 +36,10 @@ export default function Home() {
       
       <section id="project" className="snap-center">
         <Projects />
+      </section>
+
+      <section id="footer" className="snap-end">
+        <Footer />
       </section>
     </div>
   );
