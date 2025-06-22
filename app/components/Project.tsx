@@ -8,7 +8,7 @@ const webProjects = [
     title: "SDN Padangsari 01",
     description: "Internship Diskominfo Project - Rebranding Website SD Palebon 03 Semarang. Proyek ini bertujuan untuk meningkatkan visibilitas dan aksesibilitas informasi sekolah melalui desain ulang yang modern dan responsif.",
     image: "/images/image.png",
-    tech: ["Laravel", "TailwindCSS", "Framer Motion, Livewire, MySQL"],
+    tech: ["Laravel", "TailwindCSS", "Framer Motion", "Livewire", "MySQL"],
     link: "https://github.com/rezaadityaaa/sdn-padangsari",
   },  {
     title: "Sistem Poliklinik",
