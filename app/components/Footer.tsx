@@ -1,6 +1,6 @@
 "use client";
 
-import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope,  } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -18,13 +18,14 @@ export default function Footer() {
 
         {/* Navigation & Contact Info */}
         <div className="flex flex-col items-center md:items-start gap-4">
-          <h3 className="text-lg font-semibold text-cyan-400">Explore</h3>
-          <div className="mt-4 text-sm text-gray-300 flex flex-col gap-2">
-            <a href="mailto:aufa.fadholi@gmail.com" className="flex items-center gap-2 hover:text-cyan-300 transition-colors">
+          <h3 className="text-lg font-semibold text-cyan-400">Explore</h3>          <div className="mt-4 text-sm text-gray-300 flex flex-col gap-2">
+            <a 
+              href="mailto:aufa.fadholi@gmail.com?subject=Hello%20from%20your%20portfolio%20website&body=Hi%20Aufa,%0D%0A%0D%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20connect!" 
+              className="flex items-center gap-2 hover:text-cyan-300 transition-colors cursor-pointer"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaEnvelope size={16} /> aufa.fadholi@gmail.com
-            </a>
-            <a href="tel:+1234567890" className="flex items-center gap-2 hover:text-cyan-300 transition-colors">
-              <FaPhone size={16} /> +62-8231-9057-182
             </a>
           </div>
         </div>
