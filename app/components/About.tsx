@@ -1,6 +1,7 @@
 "use client";
 import { FaCode, FaPaintBrush, FaCubes } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const skills = [
 	{
@@ -72,7 +73,8 @@ export default function About() {
 								<div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 								
 								{/* Main image */}
-								<img
+								<Image
+                  width={256}
 									src="/images/astro.png"
 									alt="Aufa Fadholi"
 									className="w-full h-full object-cover group-hover:scale-130 transition-transform duration-1000 ease-out filter group-hover:brightness-115 group-hover:contrast-110 group-hover:saturate-110"
@@ -150,7 +152,7 @@ export default function About() {
 							<div className="w-12 sm:w-16 h-1 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full mx-auto md:mx-0"></div>
 						</div>						<div className="space-y-3 sm:space-y-4 text-gray-300 text-sm sm:text-base md:mt-2">
 							<p className="leading-relaxed text-justify">
-								I'm a{" "}
+								I&apos;m a{" "}
 								<span className="text-blue-400 font-semibold">
 									Frontend Developer
 								</span>{" "}

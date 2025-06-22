@@ -2,6 +2,7 @@
 "use client";
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
+import Image from 'next/image';
 
 export default function Hero() {  const [text] = useTypewriter({
     words: [
@@ -16,7 +17,8 @@ export default function Hero() {  const [text] = useTypewriter({
     <div className="relative flex flex-col items-center justify-center min-h-screen bg-gradient-to-bl from-black via-gray-950 to-gray-900 transition-opacity duration-300 ease-in-out px-4 sm:px-0">
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <BackgroundCircles />
-        <img
+        <Image
+          width={100}
           src="/images/astro.png"
           alt="Hero Image"
           className="z-10 rounded-full w-24 h-24 sm:w-32 sm:h-32 md:w-64 md:h-64 object-cover border-2 sm:border-4 border-blue-500/20"
