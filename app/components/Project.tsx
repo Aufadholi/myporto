@@ -8,7 +8,7 @@ const webProjects = [
     title: "SDN Padangsari 01",
     description: "Internship Diskominfo Project - Rebranding Website SD Palebon 03 Semarang. Proyek ini bertujuan untuk meningkatkan visibilitas dan aksesibilitas informasi sekolah melalui desain ulang yang modern dan responsif.",
     image: "/images/image.png",
-    tech: ["Laravel", "TailwindCSS", "Framer Motion"],
+    tech: ["Laravel", "TailwindCSS", "Framer Motion, Livewire, MySQL"],
     link: "https://github.com/rezaadityaaa/sdn-padangsari",
   },  {
     title: "Sistem Poliklinik",
@@ -25,22 +25,14 @@ const webProjects = [
     image: "/images/blender1.jpg",
     tech: ["Blender", "Substance Painter"],
     link: "https://yourblenderproject.com",
-  },
-  {
-    title: "3D Character Modeling",
+  },  {
+    title: "Integral Calculator",
     description:
-      "Realistic character modeled and textured in Blender, optimized for real-time rendering.",
-    image: "/images/blender1.jpg",
-    tech: ["Blender", "Substance Painter"],
-    link: "https://yourblenderproject.com",
-  },
-  {
-    title: "3D Character Modeling",
-    description:
-      "Realistic character modeled and textured in Blender, optimized for real-time rendering.",
-    image: "/images/blender1.jpg",
-    tech: ["Blender", "Substance Painter"],
-    link: "https://yourblenderproject.com",
+      "Advanced web-based numerical integration calculator built with Next.js. Features multiple integration methods including Simpson's rule, trapezoidal rule, and Gaussian quadrature with interactive visualization, real-time computation, and responsive design.",
+    image: "/images/numerik.png",
+    tech: ["Next.js", "React", "JavaScript", "Chart.js", "TailwindCSS"],
+    link: "https://github.com/Aufadholi/numerik-calculator.git",
+    deploy: "https://numerik-calculator.vercel.app/",
   },
 ];
 
@@ -110,18 +102,33 @@ export default function ProjectsPage() {
                         {tech}
                       </span>
                     ))}
+                  </div>                  {/* CTA Buttons */}
+                  <div className="flex flex-wrap gap-2 sm:gap-3">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors duration-300 group/link"
+                    >
+                      View Code 
+                      <span className="group-hover/link:translate-x-1 transition-transform duration-300">→</span>
+                    </a>
+                    
+                    {project.deploy && (
+                      <a
+                        href={project.deploy}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-3 py-1.5 text-xs sm:text-sm font-medium text-white bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-700 hover:to-emerald-700 rounded-lg transition-all duration-300 group/deploy shadow-lg hover:shadow-green-500/25"
+                      >
+                        <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                        Live Demo
+                        <span className="group-hover/deploy:translate-x-1 transition-transform duration-300">↗</span>
+                      </a>
+                    )}
                   </div>
-
-                  {/* CTA Button */}
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-xs sm:text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors duration-300 group/link"
-                  >
-                    View Project 
-                    <span className="group-hover/link:translate-x-1 transition-transform duration-300">→</span>
-                  </a>
                 </div>
               </motion.div>
             ))}
