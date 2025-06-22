@@ -15,6 +15,29 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Aufa Fadholi",
   description: "Creative Developer, Digital Architect, Innovation Enthusiast",
+  icons: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '32x32',
+      url: '/images/circleiconku.png',
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '16x16', 
+      url: '/images/circleiconku.png',
+    },
+    {
+      rel: 'apple-touch-icon',
+      sizes: '180x180',
+      url: '/images/circleiconku.png',
+    },
+    {
+      rel: 'shortcut icon',
+      url: '/images/circleiconku.png',
+    },
+  ],
   openGraph: {
     title: "Aufa Fadholi",
     description: "Creative Developer, Digital Architect, Innovation Enthusiast",
@@ -22,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Aufa Fadholi",
     images: [
       {
-        url: "/images/astro.png",
+        url: "/images/circleiconku.png",
         width: 1200,
         height: 630,
       },
@@ -36,9 +59,13 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
-  return (
+}>) {  return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/images/circleiconku.png" type="image/png" />
+        <link rel="shortcut icon" href="/images/circleiconku.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/circleiconku.png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overscroll-none`}
       >
