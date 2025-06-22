@@ -18,8 +18,9 @@ export default function Hero() {  const [text] = useTypewriter({
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <BackgroundCircles />
         <Image
-          width={100}
-          src="/images/astro.png"
+          width={350}
+          height={350}
+          src="/images/astro1.png"
           alt="Hero Image"
           className="z-10 rounded-full w-24 h-24 sm:w-32 sm:h-32 md:w-64 md:h-64 object-cover border-2 sm:border-4 border-blue-500/20"
         />

@@ -75,7 +75,8 @@ export default function About() {
 								{/* Main image */}
 								<Image
                   width={256}
-									src="/images/astro.png"
+                  height={256}
+									src="/images/profil.jpg"
 									alt="Aufa Fadholi"
 									className="w-full h-full object-cover group-hover:scale-130 transition-transform duration-1000 ease-out filter group-hover:brightness-115 group-hover:contrast-110 group-hover:saturate-110"
 								/>
