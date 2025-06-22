@@ -6,8 +6,8 @@ import BackgroundCircles from './BackgroundCircles';
 export default function Hero() {
   const [text] = useTypewriter({
     words: [
-      "<Someone who loves to explore/>",
-      "<A passionate software engineer/>",
+      "<Loves to explore/>",
+      "<Software Designer/>",
       "<A lifelong learner/>",
     ],
     loop: true,
@@ -24,7 +24,7 @@ export default function Hero() {
       </div>
 
       <div className="flex flex-col items-center text-center z-10 mt-32 sm:mt-[32rem] md:mt-[35rem]">
-        <h2 className="text-xs sm:text-md uppercase text-gray-400 pb-3 sm:pb-6 tracking-[6px] sm:tracking-[15px]">
+        <h2 className="text-xs sm:text-lg uppercase text-gray-400 pb-3 sm:pb-6 tracking-[6px] sm:tracking-[15px]">
           Software Engineer
         </h2>
         <h1 className="text-xl sm:text-4xl md:text-5xl lg:text-6xl uppercase text-white font-semibold leading-tight sm:leading-normal max-w-xs sm:max-w-none px-2 sm:px-0">

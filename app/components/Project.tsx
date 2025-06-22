@@ -70,7 +70,7 @@ export default function ProjectsPage() {
         </motion.div>
           {/* Projects Grid */}
         <div className="w-full overflow-hidden">
-          <div className="flex gap-4 sm:gap-6 lg:gap-8 overflow-x-auto overflow-y-hidden scrollbar-hide pb-6 px-4 sm:px-0" style={{ touchAction: 'pan-x' }}>
+          <div className="flex gap-4 sm:gap-6 lg:gap-14 overflow-x-auto overflow-y-hidden scrollbar-hide pb-6 px-4 sm:px-0" style={{ touchAction: 'pan-x' }}>
             {webProjects.map((project, index) => (              <motion.div
                 key={index}
                 className="group bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm border border-gray-800 rounded-2xl overflow-hidden hover:border-gray-600 transition-all duration-500 w-[260px] sm:w-[300px] md:w-[320px] lg:w-[360px] flex-shrink-0 shadow-lg relative min-h-0"
