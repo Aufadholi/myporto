@@ -8,13 +8,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Branding & Motto */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          <div className="text-4xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 animate-pulse">
-            AF
+          <div className="text-4xl font-extrabold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white via-amber-200 to-blue-100 animate-pulse">
+            AFS.
           </div>
           <p className="text-sm text-gray-200 mt-3 max-w-xs leading-relaxed">
             Pioneering cutting-edge digital solutions with innovative code, bold design, and futuristic vision.
           </p>
-          <p className="text-xs text-gray-400 mt-2">Based in the Metaverse, Earth 🌌</p>
         </div>
 
         {/* Navigation & Contact Info */}
@@ -32,7 +31,7 @@ export default function Footer() {
 
         {/* Social Icons & Quick Links */}
         <div className="flex flex-col items-center md:items-end gap-4">
-          <h3 className="text-lg font-semibold text-cyan-400">Connect</h3>
+          <h3 className="text-lg font-semibold text-cyan-400">Get In Touch</h3>
           <div className="flex gap-3">
             <a
               href="https://github.com/Aufadholi"

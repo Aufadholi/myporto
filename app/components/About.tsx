@@ -190,19 +190,19 @@ export default function About() {
 						</div>						{/* Stats */}
 						<div className="grid grid-cols-3 gap-4 pt-2 md:mt-1">
 							<div className="text-center">
-								<div className="text-2xl font-bold text-blue-400">15+</div>
+								<div className="text-2xl font-bold text-blue-400">5+</div>
 								<div className="text-xs text-gray-400 uppercase tracking-wide">
 									Projects
 								</div>
 							</div>
 							<div className="text-center">
-								<div className="text-2xl font-bold text-purple-400">2+</div>
+								<div className="text-2xl font-bold text-purple-400">1+</div>
 								<div className="text-xs text-gray-400 uppercase tracking-wide">
 									Years Exp
 								</div>
 							</div>
 							<div className="text-center">
-								<div className="text-2xl font-bold text-pink-400">5+</div>
+								<div className="text-2xl font-bold text-pink-400">1+</div>
 								<div className="text-xs text-gray-400 uppercase tracking-wide">
 									Tech Stack
 								</div>
