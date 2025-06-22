@@ -19,13 +19,6 @@ const webProjects = [
     link: "https://github.com/Aufadholi/BK-Laravel.git",
   },
   {
-    title: "3D Character Modeling",
-    description:
-      "Realistic character modeled and textured in Blender, optimized for real-time rendering.",
-    image: "/images/blender1.jpg",
-    tech: ["Blender", "Substance Painter"],
-    link: "https://yourblenderproject.com",
-  },  {
     title: "Integral Calculator",
     description:
       "Advanced web-based numerical integration calculator built with Next.js. Features multiple integration methods including Simpson's rule, trapezoidal rule, and Gaussian quadrature with interactive visualization, real-time computation, and responsive design.",
