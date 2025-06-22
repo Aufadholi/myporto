@@ -43,7 +43,7 @@ export default function Footer() {
               <FaGithub size={18} />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/aufafadholi/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2.5 rounded-full bg-gray-900/70 hover:bg-blue-600/30 text-gray-200 hover:text-blue-300 transition-colors duration-300 border border-blue-500/20"
