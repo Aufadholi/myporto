@@ -27,6 +27,13 @@ const webProjects = [
     link: "https://github.com/Aufadholi/numerik-calculator.git",
     deploy: "https://numerik-calculator.vercel.app/",
   },
+  {
+    title: "GAS-App",
+    description:
+      "Advanced web-based numerical integration calculator built with Next.js. Features multiple integration methods including Simpson's rule, trapezoidal rule, and Gaussian quadrature with interactive visualization, real-time computation, and responsive design.",
+    image: "/images/dahsboard.png",
+    tech: ["Laravel", "GIT", "Docker", "TailwindCSS"],
+  },
 ];
 
 
